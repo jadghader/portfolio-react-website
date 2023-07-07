@@ -1,0 +1,48 @@
+.hero-img{
+    width: 100%;
+    background: rgb(0, 0,0,0.5);
+    height: 90vh;
+    position: relative;
+
+}
+
+.hero-img::before{
+    content: "";
+    background: url('https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=740&t=st=1688711077~exp=1688711677~hmac=8996d15ad8bfa9c010bf8635e885af3a1b9fe8b7d4f17b77e4d67b536b78fb6a');
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-img h1{
+    font-size: 2.4rem;
+}
+
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+
+    .hero-img h1 {
+        font-size: 2rem;
+    }
+}
